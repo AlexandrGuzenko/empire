@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+</head>
+<body>
+<div style="padding-left: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p style="font-size: 1.3rem;">Доступное API:</p>
+    <ul style="list-style-type: square;">
+        <li style="font-size: 1.3rem;">GET /users/get/:id</li>
+        <li style="font-size: 1.3rem;">GET /users/delete/:id</li>
+        <li style="font-size: 1.3rem;">
+            <p>POST /users/set/:id</p>
+            <div>
+                <p>Пример запроса:</p>
+                <div style="padding: 0; margin: 0; line-height: 1.4rem; background-color: #282c34;color: #cccccc">
+                    {<br>
+                    <div style="padding: 0 0 0 10px;">
+                        "full_name": "Фамилия Имя Отчество", <br>
+                        "phone": "+79000000000", <br>
+                        "email": "fio@imperia.ru", <br>
+                        "passport": { <br>
+                        "code": "000-000", <br>
+                        "type": "Паспорт гражданина РФ", <br>
+                        "where": "ОТДЕЛЕНИЕМ УФМС РОССИИ ПО КАКОЙ-ТО ОБЛАСТИ В ГОРОДЕ КАКОМ-ТО", <br>
+                        "dateFrom": "0000-00-00T00:00:00.000Z", <br>
+                        "placeOfBirth": "Какая-то область, г. Какой-то, ул. Какая-то, д. 777", <br>
+                        "serialNumber": "00 00 000000" <br>
+                        },<br>
+                        "birth_license": { <br>
+                        "where": "г.Какой-то, отделение ЗАГС, Какой-то области", <br>
+                        "number": "000000", <br>
+                        "country": "Россия", <br>
+                        "dateFrom": "0000-00-00T00:00:00.000Z", <br>
+                        "serialLatin": "I", <br>
+                        "serialCyrillic": "РК" <br>
+                        }, <br>
+                        "oms_number": "777512366952345556988", <br>
+                        "addresses": ["000000, Какая-то область, г.Какой-то, ул. Какая-то д. 777"], <br>
+                        "snils": "000-000-000 00",
+                        "driver_license":{"dateTo": "2099-12-30T20:00:00.000Z", "dateFrom": "1997-02-12T20:00:00.000Z", "serialNumber": "777 55 968453"},<br/>
+                        "military_id" : {"where": "г.Химки, Московской области", "number": "5566985", "serial": "АК", "dateFrom": "1999-06-29T19:00:00.000Z"},<br/>
+                        "transports": [{"srts": "777589632045", "title": "AUDI TT", "number": "Т777ТТ777"}], <br/>
+                        "inn": "8526970238822",<br/>
+                        "hospital": "Московская область, г.Химки, ГБУЗ №2"<br/>
+                    </div>
+                    }
+                </div>
+            </div>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>POST /users/add</p>
+            <p>Пример запроса:</p>
+            <div style="padding: 0; margin: 0; line-height: 1.4rem;background-color: #282c34;color: #cccccc">
+                {<br>
+                <div style="padding: 0 0 0 10px;">
+                    "full_name": "Фамилия Имя Отчество", <br>
+                    "phone": "+79000000000", <br>
+                    "email": "fio@imperia.ru", <br>
+                    "passport": { <br>
+                    "code": "000-000", <br>
+                    "type": "Паспорт гражданина РФ", <br>
+                    "where": "ОТДЕЛЕНИЕМ УФМС РОССИИ ПО КАКОЙ-ТО ОБЛАСТИ В ГОРОДЕ КАКОМ-ТО", <br>
+                    "dateFrom": "0000-00-00T00:00:00.000Z", <br>
+                    "placeOfBirth": "Какая-то область, г. Какой-то, ул. Какая-то, д. 777", <br>
+                    "serialNumber": "00 00 000000" <br>
+                    },<br>
+                    "birth_license": { <br>
+                    "where": "г.Какой-то, отделение ЗАГС, Какой-то области", <br>
+                    "number": "000000", <br>
+                    "country": "Россия", <br>
+                    "dateFrom": "0000-00-00T00:00:00.000Z", <br>
+                    "serialLatin": "I", <br>
+                    "serialCyrillic": "РК" <br>
+                    }, <br>
+                    "oms_number": "777512366952345556988", <br>
+                    "addresses": ["000000, Какая-то область, г.Какой-то, ул. Какая-то д. 777"], <br>
+                    "snils": "000-000-000 00"
+                </div>
+                }
+            </div>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>GET /templates/get/:userId/:id</p>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>GET /templates/all/:userId/</p>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>GET /templates/delete/:userId/:id</p>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>POST /templates/:userId/add</p>
+            <p>Пример запроса:</p>
+            <div style="padding: 0; margin: 0; line-height: 1.4rem;background-color: #282c34;color: #cccccc">
+                {<br>
+                <div style="padding: 0 0 0 10px;">
+                    "title": "Терапевт", <br/>
+                    "data": {"date": "2019-08-10T00:00:00Z", "hospital": "ГБУЗ Московская ЦРБ (ул. Ленина)", "service_name": "врач-терапевт", "full_name_worker": "Анохина А.С"}, <br/>
+                    "settings": {"date": "2019-08-05T00:00:00Z", "reminder": "true"} <br/>
+                </div>
+                <br>}
+            </div>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>POST /templates/set/:userId/:id</p>
+            <p>Пример запроса:</p>
+            <div style="padding: 0; margin: 0; line-height: 1.4rem;background-color: #282c34;color: #cccccc">
+                {<br>
+                <div style="padding: 0 0 0 10px;">
+                    "title": "Терапевт", <br/>
+                    "data": {"date": "2019-08-10T00:00:00Z", "hospital": "ГБУЗ Московская ЦРБ (ул. Ленина)", "service_name": "врач-терапевт", "full_name_worker": "Анохина А.С"}, <br/>
+                    "settings": {"date": "2019-08-05T00:00:00Z", "reminder": "true"} <br/>
+                </div>
+                <br>}
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
