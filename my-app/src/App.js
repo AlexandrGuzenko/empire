@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import WelcomPage from './components/WelcomePage/index.js';
+import WelcomPage from './components/WelcomePage';
+import SubcategoryPage from './components/SubcategoryPage';
+import DoctorRecord from './components/DoctorRecord';
 
 class GossUslugiClone extends React.Component {
 	constructor(props) {
@@ -15,6 +17,8 @@ class GossUslugiClone extends React.Component {
 			<Router>
 				<div>
 					<Route path="/" exact component={WelcomPage} />
+					<Route path="/subcategory" exact component={SubcategoryPage} />
+					<Route path="/subcategory/doctor-record" exact component={DoctorRecord} />
 				</div>
 			</Router>
 		)
