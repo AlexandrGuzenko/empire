@@ -81,6 +81,41 @@
                 }
             </div>
         </li>
+        <li style="font-size: 1.3rem;">
+            <p>GET /templates/get/:userId/:id</p>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>GET /templates/all/:userId/</p>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>GET /templates/delete/:userId/:id</p>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>POST /templates/:userId/add</p>
+            <p>Пример запроса:</p>
+            <div style="padding: 0; margin: 0; line-height: 1.4rem;background-color: #282c34;color: #cccccc">
+                {<br>
+                <div style="padding: 0 0 0 10px;">
+                    "title": "Терапевт", <br/>
+                    "data": {"date": "2019-08-10T00:00:00Z", "hospital": "ГБУЗ Московская ЦРБ (ул. Ленина)", "service_name": "врач-терапевт", "full_name_worker": "Анохина А.С"}, <br/>
+                    "settings": {"date": "2019-08-05T00:00:00Z", "reminder": "true"} <br/>
+                </div>
+                <br>}
+            </div>
+        </li>
+        <li style="font-size: 1.3rem;">
+            <p>POST /templates/set/:userId/:id</p>
+            <p>Пример запроса:</p>
+            <div style="padding: 0; margin: 0; line-height: 1.4rem;background-color: #282c34;color: #cccccc">
+                {<br>
+                <div style="padding: 0 0 0 10px;">
+                    "title": "Терапевт", <br/>
+                    "data": {"date": "2019-08-10T00:00:00Z", "hospital": "ГБУЗ Московская ЦРБ (ул. Ленина)", "service_name": "врач-терапевт", "full_name_worker": "Анохина А.С"}, <br/>
+                    "settings": {"date": "2019-08-05T00:00:00Z", "reminder": "true"} <br/>
+                </div>
+                <br>}
+            </div>
+        </li>
     </ul>
 </div>
 

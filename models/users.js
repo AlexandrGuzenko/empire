@@ -53,7 +53,7 @@ module.exports = {
     set(req, res) {
         const self = this;
         knex('users')
-            .where({user_id: req.params.id})
+            .where({user_id: req.params.id, deleted: 0})
             .asCallback(function(err, row) {
                 if (err) return res.json(err);
                 if (row.length > 0) {
