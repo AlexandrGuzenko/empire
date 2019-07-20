@@ -11,7 +11,7 @@ module.exports = {
         app.get('/users/delete/:id', users.destroy);
 
         // Templates
-        
+
 
         // Common
         app.get('/', function(req, res) {
