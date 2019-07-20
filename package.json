@@ -1,0 +1,22 @@
+{
+  "name": "imperia-project",
+  "version": "0.0.1",
+  "description": "Хакатон Цифровой Прорыв",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrGuzenko/empire.git"
+  },
+  "author": "Imperia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandrGuzenko/empire/issues"
+  },
+  "homepage": "https://github.com/AlexandrGuzenko/empire#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
