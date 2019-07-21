@@ -11,6 +11,7 @@ body {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+
 }
 
 .welcom-page--wrapper {
@@ -79,6 +80,10 @@ body {
 	width: calc(100% - 40px);
 	min-height: calc(100vh - 40px);
 	padding: 20px;
+	font-size: 24px;
+}
+
+.subcategory--wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -99,7 +104,7 @@ body {
 
 .subcategory h2 {
 	text-align: center;
-	margin-top: 9px;
+	margin-top: 18px;
 }
 
 

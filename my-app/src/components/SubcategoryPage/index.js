@@ -32,7 +32,9 @@ class SubcategoryPage extends React.Component {
 	render() {
 		return (
 			<div className="subcategory-page">
-				{
+				<Link className="on-main-page" to="/welcome">На главную</Link>
+				<h1 className="main-headline">Мои шаблоны</h1>
+				<div className="subcategory--wrapper">{
 					this.state.subcategories.map((subcategory) => {
 						return (
 							<article key={subcategory.templates_id} className="subcategory">
@@ -40,7 +42,7 @@ class SubcategoryPage extends React.Component {
 							</article>
 						)
 					})
-				}
+				}</div>
 			</div>
 		)
 	}
