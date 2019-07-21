@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class WelcomePage extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 	componentDidMount() {
-		console.log('componentDidMount');
+
 	}
 	render() {
 		return (
@@ -23,7 +24,7 @@ class WelcomePage extends React.Component {
 					</section>
 					<section className="category-choose"> 
 						<article className="category">
-							<h2>Медицина</h2>
+							<h2><Link to="/subcategory">Медицина</Link></h2>
 						</article>
 						<article className="category">
 							<h2>ЖКХ</h2>
