@@ -7,9 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.on-main-page {
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 .welcom-page--wrapper {
@@ -169,3 +170,33 @@ code {
         opacity: 1;
     }
 }
+
+
+/*--------auth page---------------*/
+
+.button { 
+	/*font-family: 'DKCForever', sans-serif; */
+	text-transform: uppercase; 
+	outline: 0;
+	display: inline-block;
+	text-align: center;
+	width: 100px; 
+	height: 50px; 
+
+	border: 3px #CCCCCC; 
+	-moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */ 
+	-webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */ 
+	-khtml-border-radius:10px; /* закругл. для браузера Konquerer системы Linux */ 
+	border-radius: 10px; /* закругление углов для всех, кто понимает */ 
+
+	padding: 12px 15px 15px; 
+	margin: 30px; 
+	color: white; 
+	font-size: 14px; 
+	cursor: pointer; 
+}
+
+.button:hover, .button:active, .button:focus { 
+	background: white; 
+	color: black; 
+} 

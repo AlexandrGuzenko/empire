@@ -4,21 +4,23 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import WelcomPage from './components/WelcomePage';
 import SubcategoryPage from './components/SubcategoryPage';
 import DoctorRecord from './components/DoctorRecord';
+import AuthPage from './components/AuthPage';
 
 class GossUslugiClone extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 	componentDidMount() {
-		console.log('componentDidMount');
+
 	}
 	render() {
 		return (
 			<Router>
 				<div>
-					<Route path="/" exact component={WelcomPage} />
-					<Route path="/subcategory" exact component={SubcategoryPage} />
-					<Route path="/subcategory/doctor-record" exact component={DoctorRecord} />
+					<Route path="/" exact component={AuthPage} />
+					<Route path="/welcome" component={WelcomPage} />
+					<Route path="/subcategory-page" component={SubcategoryPage} />
+					<Route path="/subcategory/doctor-record" component={DoctorRecord} />
 				</div>
 			</Router>
 		)
