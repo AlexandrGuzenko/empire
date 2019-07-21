@@ -26,9 +26,11 @@ class WelcomePage extends React.Component {
 						 </p>
 					</section>
 					<section className="category-choose"> 
-						<article className="category">
-							<h2><Link to="/subcategory-page">Медицина</Link></h2>
-						</article>
+						<Link to="/subcategory-page">
+							<article className="category">
+								<h2>Медицина</h2>
+							</article>
+						</Link>
 						<article className="category">
 							<h2>ЖКХ</h2>
 						</article>

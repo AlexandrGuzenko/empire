@@ -37,9 +37,9 @@ class SubcategoryPage extends React.Component {
 				<div className="subcategory--wrapper">{
 					this.state.subcategories.map((subcategory) => {
 						return (
-							<article key={subcategory.templates_id} className="subcategory">
-								<h2><Link to={{ pathname: '/subcategory/doctor-record', state: { templateId: subcategory.templates_id, userId: subcategory.user_id } }}>{subcategory.title}</Link></h2>
-							</article>
+							<Link to={{ pathname: '/subcategory/doctor-record', state: { templateId: subcategory.templates_id, userId: subcategory.user_id } }}><article key={subcategory.templates_id} className="subcategory">
+								<h2>{subcategory.title}</h2>
+							</article></Link>
 						)
 					})
 				}</div>

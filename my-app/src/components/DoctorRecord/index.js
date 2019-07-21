@@ -18,7 +18,6 @@ class DoctorRecord extends React.Component {
 	componentDidMount() {
 		const { userId, templateId } = this.props.location.state;
 		fetch(`http://85.143.222.165:3000/templates/get/${userId}/${templateId}`).then((res) => res.json()).then((res) => {
-			console.log('res ', JSON.parse(res.data));
 			const data = JSON.parse(res.data);
 			this.setState({ recieptTime: `${this.createDate(new Date(data.date))} 11:45` });
 			this.setState({ doctorsName: data.full_name_worker });
@@ -144,6 +143,15 @@ class DoctorRecord extends React.Component {
 				    <option>{this.state.recieptTime}</option>
 				  </select>
 				</div>
+				<div className="form-check">
+				  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+				  <label style={{ fontWeight: 'normal', fontSize: '18px', margin: '10px 0' }} className="form-check-label" htmlFor="defaultCheck1">
+				    Включить оповещения
+				  </label>
+				</div>
+					<button type="button" style={{ marginRight: '30px' }} className="btn btn-secondary btn-lg">Сохранить шаблон</button>
+			    <button type="button" className="btn btn-primary btn-lg">Получить услугу</button>
+
 			</div>
 		)
 	}

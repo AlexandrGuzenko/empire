@@ -10,7 +10,6 @@ class AuthPage extends React.Component {
 	}
 	componentDidMount() {
 		this.loadSubcategories("http://172.16.9.174:3000/templates/all/1").then((res) => {
-			console.log('res', res);
 			this.setState({ subcategories: JSON.parse(res)});
 		})
 	}

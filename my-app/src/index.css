@@ -59,7 +59,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 40%;
+	width: 30vw;
 	min-width: 300px;
 	min-height: 170px;
 	border-radius: 10px;
